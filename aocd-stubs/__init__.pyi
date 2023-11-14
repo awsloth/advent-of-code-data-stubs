@@ -1,0 +1,9 @@
+from typing import Any
+from urllib3 import BaseHTTPResponse
+
+def get_data(session: str | None=None, day: int | None =None, year: int | None =None, block: bool=False) -> str:...
+def get_day_and_year() -> tuple[int, int | None]:...
+def submit(
+    answer: Any, part: str | None =None, day: int | None =None, year: int | None=None,
+    session: str | None =None, reopen: bool =True, quiet: bool =False
+) -> BaseHTTPResponse | None:...
